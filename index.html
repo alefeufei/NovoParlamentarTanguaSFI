@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <script src="src/index.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>Novo Processo</title>
+  </head>
+  <body>
+    
+    <div id="parlamentar"></div>
+    <div class="parlamentar-body">
+      <!-- <div id="leis"></div> -->
+      <div class="parlamentar-comissoes">
+        <!-- <h4>Comissões:</h4> -->
+        <div id="´perfil"></div>
+        <div id="comissoes"></div>
+      </div>
+      <div class="parlamentar-processos">
+        <h4>Processos:</h4>
+        
+      </div>
+    </div>
+
+    
+<p>
+<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+
+  <!-- ANO 2025 -->
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="pills-processo2025-tab" data-bs-toggle="pill" data-bs-target="#pills-processo2025" type="button" role="tab" aria-controls="pills-processo2025" aria-selected="true">2025</button>
+  </li>
+  <!-- ANO 2024 -->
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="pills-processo2024-tab" data-bs-toggle="pill" data-bs-target="#pills-processo2024" type="button" role="tab" aria-controls="pills-processo2024" aria-selected="false">2024</button>
+  </li>
+    <!-- ANO 2023 -->
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="pills-processo2023-tab" data-bs-toggle="pill" data-bs-target="#pills-processo2023" type="button" role="tab" aria-controls="pills-processo2023" aria-selected="false">2023</button>
+    </li>
+    <!-- ANO 2022 -->
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="pills-processo2022-tab" data-bs-toggle="pill" data-bs-target="#pills-processo2022" type="button" role="tab" aria-controls="pills-processo2022" aria-selected="false">2022</button>
+  </li>
+
+
+<!-- AQUI É ONDE ESCREVO AS IDS -->
+<!-- ANO 2024 -->
+<!-- O Ano atual é o id processos/ então não coloque anos nesse id -->
+<div class="tab-content" id="pills-processos">
+  <div class="tab-pane fade show active" id="pills-processo2025" role="tabpanel" aria-labelledby="pills-processo2025-tab" tabindex="0">
+    <div id="processos"></div>
+  </div>
+<!-- ANO 2023 -->
+  <div class="tab-pane fade" id="pills-processo2024" role="tabpanel" aria-labelledby="pills-processo2024-tab" tabindex="0">
+    <div id="processoAnoAnterior"></div> 
+    </div>
+<!-- ANO 2022 -->
+  <div class="tab-pane fade" id="pills-processo2023" role="tabpanel" aria-labelledby="pills-processo2023-tab" tabindex="0">
+<div id="processos2AnosAtras"></div> 
+</div>
+<!-- ID 2021 -->
+  <div class="tab-pane fade" id="pills-processo2022" role="tabpanel" aria-labelledby="pills-processo2022-tab" tabindex="0">
+<div id="processo3AnosAtras"></div> 
+</div>
+  </body>
+</html>
